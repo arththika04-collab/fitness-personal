@@ -1,11 +1,571 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SPA FitZone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="fitness.css" />
 </head>
+
 <body>
-    
+  <!-- nab bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#"><i class="bi bi-lightning-charge-fill"></i>SPA FitZone</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#classes">Classes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#trainers">Trainers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <button class="btn btn-primary ms-3">Join Now</button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- hero -->
+  <section id="home" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="row align-items-center min-vh-100">
+        <div class="col-lg-7">
+          <h1 class="display-2 fw-bold text-white mb-4 hero-title">
+            Transform Your Body & Mind
+          </h1>
+          <p class="lead text-white mb-4">
+            Join FitZone and start your fitness journey today. Expert
+            trainers, modern equipment, and a supportive community await you.
+          </p>
+          <div class="d-flex gap-3 flex-wrap">
+            <button class="btn btn-primary btn-lg px-5">Get Started</button>
+            <button class="btn btn-outline-light btn-lg px-5">
+              Free Trial
+            </button>
+          </div>
+          <div class="row mt-5 g-4">
+            <div class="col-md-4">
+              <div class="stats-card">
+                <h3 class="fw-bold text-white">500+</h3>
+                <p class="text-white-50 mb-0">Active Members</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="stats-card">
+                <h3 class="fw-bold text-white">50+</h3>
+                <p class="text-white-50 mb-0">Expert Trainers</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="stats-card">
+                <h3 class="fw-bold text-white">100+</h3>
+                <p class="text-white-50 mb-0">Classes Weekly</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- About -->
+<section id="about" class="about-section text-white">
+  <!-- Background video -->
+  <video class="about-bg-video" autoplay muted loop playsinline>
+    <source src="aboutus.mp4" type="video/mp4" />
+  </video>
+
+  <!-- Tint overlay -->
+  <div class="about-overlay"></div>
+
+  <!-- Content -->
+  <div class="container position-relative z-2">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <div class="about-stack mx-auto text-center">
+          <span class="about-eyebrow">WELCOME TO SPA SPORTFIT</span>
+
+          <h1 class="about-title">
+            Transform Your Body <span class="about-title-accent">&amp; Mind</span>
+          </h1>
+
+          <p class="about-subtitle">
+            At SPA Sportfit, your fitness journey is our mission. We combine
+            science-based training, modern equipment, elite coaches and a motivating
+            community to help you build strength, boost endurance and transform your lifestyle.
+          </p>
+
+          <ul class="about-list mx-auto text-start">
+            <li>
+              <i class="bi bi-check2-circle"></i>
+              Advanced Strength &amp; Conditioning Programs
+            </li>
+            <li>
+              <i class="bi bi-check2-circle"></i>
+              Personal &amp; Group Training Sessions
+            </li>
+            <li>
+              <i class="bi bi-check2-circle"></i>
+              Modern Gym Equipment &amp; Functional Space
+            </li>
+            <li>
+              <i class="bi bi-check2-circle"></i>
+              Mind-Body Training &amp; Motivation Coaching
+            </li>
+            <li>
+              <i class="bi bi-check2-circle"></i>
+              Personalized Nutrition &amp; Fat-Loss Guidance
+            </li>
+            <li>
+              <i class="bi bi-check2-circle"></i>
+              Weekly Progress Tracking &amp; Goal Review
+            </li>
+          </ul>
+
+          <div class="about-cta">
+            <a href="#contact" class="btn btn-primary about-btn">
+              Start Your Fitness Journey
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  <!-- classes -->
+  <section id="classes" class="py-5">
+    <div class="container py-5">
+      <div class="text-center mb-5">
+        <span class="badge bg-primary mb-3">Our Classes</span>
+        <h2 class="display-4 fw-bold mb-3">Choose Your Workout</h2>
+        <p class="lead text-muted">Diverse range of classes designed for all fitness levels</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="class-card">
+            <div class="class-image">
+              <img src="Media/couples.jpg" alt="Strength Training">
+              <div class="class-overlay">
+                <span class="badge bg-primary">Beginner-Advanced</span>
+              </div>
+            </div>
+            <div class="class-content">
+              <h4 class="fw-bold mb-3">Strength Training</h4>
+              <p class="text-muted mb-3">Build muscle and increase strength with our comprehensive weight training
+                programs.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <i class="bi bi-clock text-primary"></i>
+                  <span class="ms-2 text-muted">45 min</span>
+                </div>
+                <div>
+                  <i class="bi bi-fire text-primary"></i>
+                  <span class="ms-2 text-muted">High Intensity</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="class-card">
+            <div class="class-image">
+              <img src="Media/yoka meditation.jpg" alt="Yoga">
+              <div class="class-overlay">
+                <span class="badge bg-primary">All Levels</span>
+              </div>
+            </div>
+            <div class="class-content">
+              <h4 class="fw-bold mb-3">Yoga & Meditation</h4>
+              <p class="text-muted mb-3">Find your balance and inner peace with our relaxing yoga sessions.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <i class="bi bi-clock text-primary"></i>
+                  <span class="ms-2 text-muted">60 min</span>
+                </div>
+                <div>
+                  <i class="bi bi-fire text-primary"></i>
+                  <span class="ms-2 text-muted">Low Intensity</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="class-card">
+            <div class="class-image">
+              <img src="Media/cardio.jpg" alt="Cardio">
+              <div class="class-overlay">
+                <span class="badge bg-primary">Intermediate</span>
+              </div>
+            </div>
+            <div class="class-content">
+              <h4 class="fw-bold mb-3">Cardio Blast</h4>
+              <p class="text-muted mb-3">Burn calories and improve cardiovascular health with high-energy cardio
+                workouts.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <i class="bi bi-clock text-primary"></i>
+                  <span class="ms-2 text-muted">30 min</span>
+                </div>
+                <div>
+                  <i class="bi bi-fire text-primary"></i>
+                  <span class="ms-2 text-muted">High Intensity</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="class-card">
+            <div class="class-image">
+              <img src="Media/boxing.jpg" alt="Boxing">
+              <div class="class-overlay">
+                <span class="badge bg-primary">All Levels</span>
+              </div>
+            </div>
+            <div class="class-content">
+              <h4 class="fw-bold mb-3">Boxing & Combat</h4>
+              <p class="text-muted mb-3">Learn self-defense while getting an intense full-body workout.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <i class="bi bi-clock text-primary"></i>
+                  <span class="ms-2 text-muted">50 min</span>
+                </div>
+                <div>
+                  <i class="bi bi-fire text-primary"></i>
+                  <span class="ms-2 text-muted">High Intensity</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="class-card">
+            <div class="class-image">
+              <img src="Media/spin.jpg" alt="Cycling">
+              <div class="class-overlay">
+                <span class="badge bg-primary">Beginner - Advanced</span>
+              </div>
+            </div>
+            <div class="class-content">
+              <h4 class="fw-bold mb-3">Spin Classes</h4>
+              <p class="text-muted mb-3">High-energy indoor cycling classes with motivating music and coaching.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <i class="bi bi-clock text-primary"></i>
+                  <span class="ms-2 text-muted">45 min</span>
+                </div>
+                <div>
+                  <i class="bi bi-fire text-primary"></i>
+                  <span class="ms-2 text-muted">Medium Intensity</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="class-card">
+            <div class="class-image">
+              <img src="Media/gym_6.jpg" alt="CrossFit">
+              <div class="class-overlay">
+                <span class="badge bg-primary">Advanced</span>
+              </div>
+            </div>
+            <div class="class-content">
+              <h4 class="fw-bold mb-3">CrossFit Training</h4>
+              <p class="text-muted mb-3">Intense functional fitness workouts combining multiple training methods.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <i class="bi bi-clock text-primary"></i>
+                  <span class="ms-2 text-muted">60 min</span>
+                </div>
+                <div>
+                  <i class="bi bi-fire text-primary"></i>
+                  <span class="ms-2 text-muted">Very High</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- trainers -->
+
+  <section id="trainers" class="py-5 bg-light">
+    <div class="container py-5">
+      <div class="text-center mb-5">
+        <span class="badge bg-primary mb-3">Expert Team</span>
+        <h2 class="display-4 fw-bold mb-3">Meet Our professional Trainers</h2>
+        <p class="lead text-muted">Certified professionals committed to your fitness journey</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="trainer-card">
+            <div class="trainer-image">
+              <img src="Media/anush.jpg" alt="Trainer">
+            </div>
+            <div class="trainer-content">
+              <h5 class="fw-bold mb-1">Anush</h5>
+              <p class="text-primary mb-2">Strength Coach</p>
+              <p class="text-muted small mb-3">20+ years experience in bodybuilding and powerlifting</p>
+              <div class="social-links">
+                <a href="https://web.facebook.com/iamanushgorak/"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/anushgorak"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="trainer-card">
+            <div class="trainer-image">
+              <img src="Media/yoka.jpg" alt="Trainer">
+            </div>
+            <div class="trainer-content">
+              <h5 class="fw-bold mb-1">Stelina</h5>
+              <p class="text-primary mb-2">Yoga Instructor</p>
+              <p class="text-muted small mb-3">Certified yoga master with focus on mindfulness</p>
+              <div class="social-links">
+                <a href="https://web.facebook.com/BookYogaTeacherTraining#"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/tripaneer/"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UC7ngKx0ndTGcJ7Q_VXKajHA"><i class="bi bi-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="trainer-card">
+            <div class="trainer-image">
+              <img src="Media/boxer.jpg" alt="Trainer">
+            </div>
+            <div class="trainer-content">
+              <h5 class="fw-bold mb-1">Amerilina</h5>
+              <p class="text-primary mb-2">Boxing Coach</p>
+              <p class="text-muted small mb-3">Former professional boxer, 15 years coaching</p>
+              <div class="social-links">
+                <a href="https://web.facebook.com/freepixelofficial?_rdc=1&_rdr#"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/freepixel.official/"><i class="bi bi-instagram"></i></a>
+                <a href="https://x.com/freepixel_com"><i class="bi bi-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="trainer-card">
+            <div class="trainer-image">
+              <img src="Media/royal.jpg" alt="Trainer">
+            </div>
+            <div class="trainer-content">
+              <h5 class="fw-bold mb-1">Royan</h5>
+              <p class="text-primary mb-2">Cardio Specialist</p>
+              <p class="text-muted small mb-3">Expert in HIIT and endurance training programs</p>
+              <div class="social-links">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section  class="video-section">
+  <video width="750" height="750" controls autoplay muted loop>
+    <source src="Media/video.mp4" type="video/mp4">
+  </video>
+</section>
+
+
+  <!-- Contact -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <span class="badge bg-primary mb-3">Get In Touch</span>
+          <h2 class="display-4 fw-bold mb-4">
+            Start Your Fitness Journey Today
+          </h2>
+          <p class="lead text-muted mb-4">
+            Ready to transform your life? Contact us for a free consultation
+            and tour of our facilities.
+          </p>
+          <div class="contact-info">
+            <div class="contact-item mb-4">
+              <div class="contact-icon">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-1">Location</h6>
+                <p class="text-muted mb-0">
+                  4,6 Boundary road, Kalvajal, Chavakachcheri
+                </p>
+              </div>
+            </div>
+            <div class="contact-item mb-4">
+              <div class="contact-icon">
+                <i class="bi bi-telephone-fill"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-1">Phone</h6>
+                <p class="text-muted mb-0">+94767360192</p>
+              </div>
+            </div>
+            <div class="contact-item mb-4">
+              <div class="contact-icon">
+                <i class="bi bi-envelope-fill"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-1">Email</h6>
+                <p class="text-muted mb-0">info@spafitzone.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-clock-fill"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-1">Hours</h6>
+                <p class="text-muted mb-0">
+                  Mon-Fri: 5am-10pm | Sat-Sun: 6am-9pm
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="contact-form">
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control form-control-lg" placeholder="Your Name" />
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control form-control-lg" placeholder="Your Email" />
+              </div>
+              <div class="mb-3">
+                <input type="tel" class="form-control form-control-lg" placeholder="Your Phone" />
+              </div>
+              <div class="mb-3">
+                <select class="form-select form-select-lg">
+                  <option selected>Select a Membership</option>
+                  <option>Basic - 5000 Rs / month</option>
+                  <option>Premium - 7000 Rs / month</option>
+                  <option>Elite - 9000 Rs / month</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control form-control-lg" rows="4" placeholder="Your Message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg w-100">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h4 class="fw-bold mb-4">
+            <i class="bi bi-lightning-charge-fill"></i>SPA FitZone
+          </h4>
+          <p class="text-white-50 mb-4">
+            Transform your body and mind with expert guidance, modern
+            facilities, and a supportive community.
+          </p>
+          <div class="social-links-footer">
+            <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="fw-bold mb-4">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#home" class="text-white-50 text-decoration-none">Home</a>
+            </li>
+            <li class="mb-2">
+              <a href="#about" class="text-white-50 text-decoration-none">About</a>
+            </li>
+            <li class="mb-2">
+              <a href="#classes" class="text-white-50 text-decoration-none">Classes</a>
+            </li>
+            <li class="mb-2">
+              <a href="#trainers" class="text-white-50 text-decoration-none">Trainers</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="fw-bold mb-4">Support</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#pricing" class="text-white-50 text-decoration-none">Pricing</a>
+            </li>
+            <li class="mb-2">
+              <a href="#contact" class="text-white-50 text-decoration-none">Contact</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="text-white-50 text-decoration-none">FAQ</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="text-white-50 text-decoration-none">Support</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h5 class="fw-bold mb-4">News letter</h5>
+          <p class="text-white-50 mb-3">
+            Subscribe to get fitness tips and special offers
+          </p>
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Your email" />
+            <button class="btn btn-primary" type="button">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <hr class="my-4 bg-secondary" />
+      <div class="text-center text-white-50">
+        <p class="mb-0">&copy; 2025 SPA FitZone Gym. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
 </body>
 </html>
