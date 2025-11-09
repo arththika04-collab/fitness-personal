@@ -120,8 +120,8 @@ html {
 /* hero */
 .hero-section {
   position: relative;
-  background: linear-gradient(135deg, #1a1a1a 0%, #060606 100%);
-  background-image: url(hero.jpg);
+  background: linear-gradient(135deg, #dac4c4 0%, #464444 100%);
+  background-image: url(ds.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
