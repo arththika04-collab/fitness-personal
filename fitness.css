@@ -72,6 +72,9 @@ html {
 .navbar-brand {
   font-size: 28px;
   letter-spacing: 1px;
+  text-shadow: 2px 2px 10px #8f1f32;
+  text-shadow: 0 0 15px #30b594;
+  background: linear-gradient(45deg, #323434,)
 }
 
 .navbar-brand i {
@@ -150,6 +153,13 @@ html {
   font-weight: 800;
   line-height: 1.2;
   animation: fadeInUp 1s ease;
+  text-shadow: 2px 2px 10px #f2072e;
+  text-shadow: 0 0 15px #e01129;
+  background: linear-gradient(45deg, #323434,)
+  
+
+
+
 }
 
 .stats-card {
@@ -200,7 +210,7 @@ html {
   font-family:sans-serif;
   letter-spacing: 0.1em;
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   color: rgba(255,255,255,0.85);
   background: rgba(255,255,255,0.08);
   border: 6px solid rgba(255,255,255,0.12);
@@ -319,7 +329,7 @@ html {
 /* classes */
 
 .class-card {
-  background: white;
+  background: rgb(247, 246, 246);
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
@@ -363,7 +373,7 @@ html {
 /* trainers */
 
 .trainer-card {
-  background: white;
+  background: rgb(60, 58, 58);
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
