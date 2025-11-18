@@ -2,6 +2,11 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+sticky {
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(6px);
+}
+
 }
 
 /* nab bar */
