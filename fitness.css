@@ -322,14 +322,6 @@ body {
   transform: scale(1.03);
 }
 
-/* FOOTER */
-footer {
-  margin-top: 50px;
-  padding: 20px;
-  text-align: center;
-  font-size: 0.9rem;
-  opacity: 0.6;
-}
 
 
 .about-btn {
@@ -385,7 +377,7 @@ footer {
 /* classes */
 
 .class-card {
-  background: rgb(247, 246, 246);
+  background: rgb(13, 13, 13);
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
@@ -395,7 +387,7 @@ footer {
 
 .class-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 20px 60px rgba(10, 10, 10, 0.15);
 }
 
 .class-image {
@@ -424,6 +416,7 @@ footer {
 
 .class-content {
   padding: 30px;
+  
 }
 
 /* trainers */
@@ -488,7 +481,7 @@ footer {
   content: '';
   position: absolute;
   inset: 4px;
-  background: #fff;
+  background: #0d0d0d;
   border-radius: 16px;
   z-index: 1;
 }
